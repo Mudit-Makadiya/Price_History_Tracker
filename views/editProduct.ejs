@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Price History Tracker</title>
+    <link rel="stylesheet" href="/css/addProduct.css">
+</head>
+<body>
+    <h1>Edit Product</h1>
+    <form action="/products/editProduct/<%= product.product_id %>?_method=PATCH " method="POST">
+        <div>
+            <label for="product_name">Product Name</label>
+            <input type="text" name="product_name" id="product_name"    placeholder="Product Name" value="<%= product.product_name %> ">
+        </div>
+        <div>
+            <label for="description">Description</label>
+            <input type="text" name="description" id="description" placeholder="Description" value="<%= product.description %> ">
+        </div>
+        <div>
+            <label for="source_image">Source Image</label>
+            <input type="text" name="source_image" id="source_image" placeholder="Source Image" value="<%= product.source_image %> ">
+        </div>
+        <div>
+            <label for="actual_price">Actual Price</label>
+            <input type="text" name="actual_price" id="actual_price" placeholder="Actual Price" value="<%= product.actual_price%> ">
+        </div>
+        <div>
+            <label for="price_offered">Price Offered</label>
+            <input type="text" name="price_offered" id="price_offered" placeholder="Price Offered" value="<%= product.price_offered %> ">
+        </div>
+        <div>
+            <label for="pe_id">pe_id(must be between 1 to 40)</label>
+            <input type="text" name="pe_id" id="pe_id" placeholder="pe_id" value="<%= product.pe_id %> ">
+        </div>
+        <div>
+            <label for="ce_id">ce_id(must be between 1 to 9)</label>
+            <input type="text" name="ce_id" id="ce_id" placeholder="ce_id" value="<%= product.ce_id %> ">
+        </div>
+        <button>Edit Product</button>
+    </form>
+</body>
+</html>

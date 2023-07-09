@@ -1,0 +1,48 @@
+body {
+  background: rgb(49, 19, 134);
+  background: linear-gradient(to top, #647dee, #7f53ac);
+  color: aliceblue;
+}
+table,
+th,
+td {
+  border: 1px solid black;
+}
+
+.navbar {
+  display: flex;
+}
+
+#queries {
+  margin-right: 50rem;
+  background-color: white;
+  padding-top: 21px;
+  padding-bottom: 21px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 10px;
+}
+
+#home {
+  background-color: white;
+  padding-top: 21px;
+  padding-bottom: 21px;
+  padding-right: 14px;
+  border-radius: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+h1 {
+  color: black;
+  text-align: center;
+  text-decoration: underline;
+  font-weight: bolder;
+}
+
+#headRow {
+  color: black;
+}

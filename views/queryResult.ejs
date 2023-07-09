@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Price History Tracker</title>
+    <link rel="stylesheet" href="/css/queryResult.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <h2>
+        <a href="/queries" id="queries">Back to Queries</a>
+      </h2>
+      <h2><a href="/home" id="home">Back to Home</a></h2>
+    </div>
+    <% if(err){ %>
+    <h1>Something went wrong with the query</h1>
+    <h2>Here is the error:</h2>
+    <div><%= error %></div>
+    <% }else{ %>
+    <h1>Executed Successfully.Here is the result:</h1>
+    <table>
+      <tr id="headRow">
+        <% for(let r in rows[0]){ %>
+        <th><%= r %></th>
+        <% } %>
+      </tr>
+      <% for(let row of rows) {%>
+      <tr>
+        <% for(let r in row) {%>
+        <th><%= row[`${r}`] %></th>
+        <% } %>
+      </tr>
+      <% } %> <% }%>
+    </table>
+  </body>
+</html>

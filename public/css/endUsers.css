@@ -1,0 +1,54 @@
+body {
+  background: rgb(75, 19, 134);
+  background: rgb(49, 19, 134);
+  background: linear-gradient(
+    to right,
+    #647DEE,
+    #7F53AC
+  );
+  color: aliceblue;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+}
+
+.navbar {
+  display: flex;
+}
+
+#home {
+  margin-right: 59rem;
+  background-color: white;
+  padding-top: 21px;
+  padding-bottom: 21px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 10px;
+}
+
+#addUser {
+  background-color: white;
+  padding-top: 21px;
+  padding-bottom: 21px;
+  padding-right: 14px;
+  border-radius: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+h1 {
+  color: black;
+  text-align: center;
+  text-decoration: underline;
+  font-weight: bolder;
+}
+
+#headRow {
+  color: black;
+}

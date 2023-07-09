@@ -1,0 +1,22 @@
+body {
+  background: rgb(75, 19, 134);
+  background: rgb(49, 19, 134);
+  background: linear-gradient(to right, #647dee, #7f53ac);
+  color: aliceblue;
+}
+
+h1 {
+  margin-top: 20%;
+}
+
+h1,
+h2 {
+  color: black;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  padding: 20px;
+}
